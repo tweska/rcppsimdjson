@@ -122,7 +122,7 @@ fload <- function(json,
     }
 
     if (int64_policy == 2L && !requireNamespace("bit64", quietly = TRUE)) {
-        stop(r"('int64_policy="integer64"', but the 'bit64' package is not installed.)") # nocov
+        # stop(r"('int64_policy="integer64"', but the 'bit64' package is not installed.)") # nocov
     }
 
     diagnosis <- .prep_input(json,
